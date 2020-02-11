@@ -1,8 +1,10 @@
 import math
 def isPrimeNumber(num):
+    if num <= 1:
+        return False
     i = 2
     x = math.sqrt(num)
-    while i < x:
+    while i <= x:
         if num%i == 0:
             return False
         i += 1
